@@ -1,4 +1,4 @@
-name: Deploy develop to heroku
+name: Deploy main to heroku
 
 on:
   push:
@@ -18,5 +18,4 @@ jobs:
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_ORG_EMAIL}}
         env:
-          HD_ENVIRONMENT: develop
           HD_NEXT_PUBLIC_ENV: ${{secrets.ENV_DEV}}
